@@ -1,0 +1,181 @@
+/*
+style.css
+    author: Xavier Sala Garcia;
+    version: 0.1
+    date: under-construction;
+    description: manual d'estils corporatius.
+*/
+
+/*
+INDEX
+    1-  Text
+    2-  Buttons
+    3-  Menus
+    4-  Margins and paddings
+    5-  Blocks alignments
+    6-  Backgrounds
+    7-  Colors
+    8-  Other resources
+/********************** TEXT *************************/
+
+.text-align-justify {
+    text-align: justify;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.font-size-L {
+    font-size: 1.2rem;
+}
+
+
+/********************* BUTTONS  *************************/
+.btn {
+    display: inline-block;
+    width: 100px;
+    padding: 0.5rem 1rem;
+    border: solid 1px var(--color-3);
+    border-radius: 10px;
+    background-color: var(--contrast-color-6);
+    text-align: center;
+    text-decoration: none;
+    color: var(--contrast-color-1)
+        /*box-shadow: 4px 4px;*/
+
+}
+
+.btn:active {
+    box-shadow: 0 0 4px 1px var(--gray-5);
+}
+
+.btn:hover {
+    background-color: var(--contrast-color-5);
+}
+
+
+/********************* MENU *************************/
+/*menu-bar is nav.menu-bar.row>a.col-n{item-$}*$   n: col-3, 4...*/
+.menu-bar a {
+    display: block;
+    background-color: var(--color-6);
+    color: var(--gray-1);
+    border: 1px solid var(--color-1);
+    padding: 1rem;
+    margin: 0;
+    text-decoration: none;
+    flex-grow: 1;
+    min-width: 110px;
+}
+
+.menu-bar {
+    justify-content: space-between;
+
+}
+
+/*******************MARGES I PADDINGS***************/
+.no-padding {
+    padding: 0;
+}
+
+.no-padding-top-bottom {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.margin-top-bottom {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-top-bottom {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/******************BLOCKS*************************/
+.center-block {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/**************backgrounds*************************/
+.background-color-2 {
+    background-color: var(--color-2);
+}
+
+.background-color-1 {
+    background-color: var(--color-1);
+}
+
+/**************colors*************************/
+.color-1 {
+    color: var(--color-1)
+}
+
+.color-2 {
+    color: var(--color-2)
+}
+
+.color-3 {
+    color: var(--color-3)
+}
+
+.color-4 {
+    color: var(--color-4)
+}
+
+.color-5 {
+    color: var(--color-5)
+}
+
+.color-5 {
+    color: var(--color-6)
+}
+
+.contrast-color-1 {
+    color: var(--contrast-color-1)
+}
+
+.contrast-color-2 {
+    color: var(--contrast-color-2)
+}
+
+.contrast-color-3 {
+    color: var(--contrast-color-3)
+}
+
+.contrast-color-4 {
+    color: var(--contrast-color-4)
+}
+
+.contrast-color-5 {
+    color: var(--contrast-color-5)
+}
+
+.contrast-color-5 {
+    color: var(--contrast-color-6)
+}
+
+/******************* OTHER RESOURCES *****************/
+/*A floating anchor, maybe <a> or <div>*/
+.floating-block-bottom-rigt {
+    display: inline-block; /*?*/
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
