@@ -50,7 +50,6 @@ INDEX
     text-align: center;
     text-decoration: none;
     color: var(--contrast-color-1)
-        /*box-shadow: 4px 4px;*/
 
 }
 
@@ -106,6 +105,13 @@ INDEX
     margin-bottom: 0;
 }
 
+.no-margin {
+    margin: 0;
+}
+.padding {
+    padding: 1rem;
+}
+
 
 /******************BLOCKS*************************/
 .center-block {
@@ -120,6 +126,42 @@ INDEX
 
 .background-color-1 {
     background-color: var(--color-1);
+}
+
+.background-color-3 {
+    background-color: var(--color-3);
+}
+
+.background-color-4 {
+    background-color: var(--color-4);
+}
+.background-color-5 {
+    background-color: var(--color-5);
+}
+.background-color-6 {
+    background-color: var(--color-6);
+}
+
+.background-contrast-color-2 {
+    background-color: var(--contrast-color-2);
+}
+
+.background-contrast-color-1 {
+    background-color: var(--contrast-color-1);
+}
+
+.background-contrast-color-3 {
+    background-color: var(--contrast-color-3);
+}
+
+.background-contrast-color-4 {
+    background-color: var(--contrast-color-4);
+}
+.background-contrast-color-5 {
+    background-color: var(--contrast-color-5);
+}
+.background-contrast-color-6 {
+    background-color: var(--contrast-color-6);
 }
 
 /**************colors*************************/
@@ -173,7 +215,7 @@ INDEX
 
 /******************* OTHER RESOURCES *****************/
 /*A floating anchor, maybe <a> or <div>*/
-.floating-block-bottom-rigt {
+.floating-block-bottom-right {
     display: inline-block; /*?*/
     position: fixed;
     bottom: 10px;
