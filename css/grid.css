@@ -106,7 +106,8 @@
 
 [class*="col-"] { /*Every columns have padding!*/
     padding: 1rem;
-    flex: 1 1 100%;
+    flex: 1 1 100%; /*default, columns adapt their size*/
+    margin: 0; /*Default no margins for columns*/
 }
 
 /* The columns grow when there is remaining space*/

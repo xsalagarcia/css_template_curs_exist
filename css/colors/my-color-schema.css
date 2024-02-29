@@ -2,7 +2,7 @@
 Theme definition. Colors
 */
 /* Color, from High to low*/
-.my-color-schema {
+body { /*Default, no specific class needed*/
     --color-6: #718355;
     --color-5: #87986A;
     --color-4: #97A97C;
@@ -15,6 +15,28 @@ Theme definition. Colors
     --contrast-color-3: #aa7f66;
     --contrast-color-2: #dbc2b3;
     --contrast-color-1: #ecd6c9;
+    --gray-6: #212529;
+    --gray-5: #595959;
+    --gray-4: #7F7F7F;
+    --gray-3: #A5A5A5;
+    --gray-2: #CCCCCC;
+    --gray-1: #F2F2F2;
+    --transparent: #ffffff00;
+}
+
+.invert-default-colors { /*It has to be used at body. Type this class at body*/
+    --color-6: #772c00;
+    --color-5: #8a4218;
+    --color-4: #ac6a43;
+    --color-3: #aa7f66;
+    --color-2: #dbc2b3;
+    --color-1: #ecd6c9;
+    --contrast-color-6: #718355; 
+    --contrast-color-5: #87986A; 
+    --contrast-color-4: #97A97C; 
+    --contrast-color-3: #B5C99A; 
+    --contrast-color-2: #CFE1B9; 
+    --contrast-color-1: #E9F5DB; 
     --gray-6: #212529;
     --gray-5: #595959;
     --gray-4: #7F7F7F;
