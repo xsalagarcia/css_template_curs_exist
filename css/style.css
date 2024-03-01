@@ -188,22 +188,22 @@ INDEX
     background-color: var(--contrast-color-6);
 }
 .background-gray-1 {
-    background-color: var(--gray-2)
+    background-color: var(--gray-1)
 }
 .background-gray-2 {
     background-color: var(--gray-2)
 }
 .background-gray-3 {
-    background-color: var(--gray-2)
+    background-color: var(--gray-3)
 }
 .background-gray-4 {
-    background-color: var(--gray-2)
+    background-color: var(--gray-4)
 }
 .background-gray-5 {
-    background-color: var(--gray-2)
+    background-color: var(--gray-5)
 }
 .background-gray-6 {
-    background-color: var(--gray-2)
+    background-color: var(--gray-6)
 }
 /**************colors*************************/
 .color-1 {

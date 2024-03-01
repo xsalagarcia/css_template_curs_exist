@@ -9,15 +9,15 @@ header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, vi
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--header-font);
-    /*Falta interliniat*/
 }
 
 h1 {
     color: var(--color-6);
     font-size: 2.5em;
-    margin-inline-start: 0px;
+    margin-inline-start: px;
     margin-inline-end: 0px;
     font-weight: bold;
+    line-height: 2.5rem;
 }
 
 h2 {
@@ -26,6 +26,7 @@ h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    line-height: 2rem;
 }
 
 h3 {
@@ -34,6 +35,7 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    line-height: 1.75rem;
 }
 
 h4 {
@@ -42,6 +44,8 @@ h4 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    line-height: 1.25rem;
+
 }
 
 h5 {
@@ -50,6 +54,7 @@ h5 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    line-height: 1.25rem;
 }
 
 h6 {
@@ -58,6 +63,7 @@ h6 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    line-height: 1rem;
 }
 
 p {
