@@ -1,0 +1,31 @@
+
+
+
+
+/* Use it if you want to make responsive customizations*/
+/*==========  Responsive: Mobile First Method  ==========*/
+
+/* Extra small devices (phones, 600px and down) *//*xs*/
+@media only screen and (max-width: 600px) {
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) *//*sm*/
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium devices (landscape tablets, 768px and up) *//*md*/
+@media only screen and (min-width: 768px) {
+
+}
+/* Large devices (laptops/desktops, 992px and up) *//*lg*/
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) *//*xl*/
+@media only screen and (min-width: 1200px) {
+
+}
+/* Extra Extra large devices (large laptops and desktops, 1200px and up) *//*xxl*/
+@media only screen and (min-width: 1400px) {
+
+}

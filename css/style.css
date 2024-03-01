@@ -84,6 +84,7 @@ INDEX
     text-decoration: none;
     flex-grow: 1;
     min-width: 110px;
+    text-align: center;
 }
 
 .menu-bar {
@@ -99,6 +100,10 @@ INDEX
 .no-padding-top-bottom {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.padding-2 {
+    padding: 2rem;
 }
 
 .padding {
@@ -182,7 +187,24 @@ INDEX
 .background-contrast-color-6 {
     background-color: var(--contrast-color-6);
 }
-
+.background-gray-1 {
+    background-color: var(--gray-2)
+}
+.background-gray-2 {
+    background-color: var(--gray-2)
+}
+.background-gray-3 {
+    background-color: var(--gray-2)
+}
+.background-gray-4 {
+    background-color: var(--gray-2)
+}
+.background-gray-5 {
+    background-color: var(--gray-2)
+}
+.background-gray-6 {
+    background-color: var(--gray-2)
+}
 /**************colors*************************/
 .color-1 {
     color: var(--color-1)
