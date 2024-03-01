@@ -26,7 +26,7 @@ S'aplica un tema per defecte, però si s'utilitzen les classes definides dins un
 P.ex. Si ```<body class="roboto-merriweather">``` tot el contingut del body tindrà les tipografies merryweather per les etiquetes ```<h1> ... <h6>```.
 
 ## base.css
-Complement a [reset.css](##reset.css), que dóna un format bàsic a diferents elements com p, h1-h6...
+Complement a [reset.css](#resetcss), que dóna un format bàsic a diferents elements com p, h1-h6...
 
 Només es seleccionen elements html, no les classes.
 
