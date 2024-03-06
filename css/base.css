@@ -14,10 +14,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     color: var(--color-6);
     font-size: 2.5em;
-    margin-inline-start: px;
+    margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    line-height: 2.5rem;
+    line-height: 3rem;
 }
 
 h2 {
@@ -26,7 +26,7 @@ h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    line-height: 2rem;
+    line-height: 2.2rem;
 }
 
 h3 {
@@ -35,7 +35,7 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    line-height: 1.75rem;
+    line-height: 2rem;
 }
 
 h4 {
@@ -44,7 +44,7 @@ h4 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    line-height: 1.25rem;
+    line-height: 2rem;
 
 }
 
@@ -54,7 +54,7 @@ h5 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    line-height: 1.25rem;
+    line-height: 1.75rem;
 }
 
 h6 {
@@ -63,7 +63,7 @@ h6 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    line-height: 1rem;
+    line-height: 1.5rem;
 }
 
 p {
@@ -77,9 +77,6 @@ p {
 a {
     color: var(--contrast-color-6);
 }
-
-
-
 
 blockquote {
     position: relative;
@@ -101,4 +98,13 @@ blockquote::after{
     position: absolute;
     bottom: -0.5rem;
     right: 1rem;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+td, th{
+    padding: 0.5rem;
+    border: 1px solid var(--gray-6);
 }

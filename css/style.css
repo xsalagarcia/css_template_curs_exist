@@ -17,58 +17,46 @@ INDEX
     7-  Colors
     8-  Other resources
 /********************** TEXT *************************/
-
-.text-align-justify {
-    text-align: justify;
-}
-
-.text-align-center {
-    text-align: center;
-}
-
-.text-align-right {
-    text-align: right;
-}
+.text-align-justify {text-align: justify;}
+.text-align-center {text-align: center;}
+.text-align-right {text-align: right;}
+.text-shadow {text-shadow: 2px 2px 2px black;}
 
 /********************* FONT *********************************/
-.bold {
-    font-weight: bold;
-}
-
-.font-size-L {
-    font-size: 1.2rem;
-}
-
+.bold {font-weight: bold;}
+.italica {font-style: italic;}
+.underline {text-decoration: underline;}
+.font-size-L {font-size: 1.2rem;}
 
 /********************* BUTTONS  *************************/
 .btn {
     display: inline-block;
-    width: 100px;
+    min-width: 100px;
     padding: 0.5rem 1rem;
     border: solid 1px var(--color-3);
     border-radius: 10px;
     background-color: var(--contrast-color-6);
     text-align: center;
     text-decoration: none;
-    color: var(--contrast-color-1)
-
+    color: var(--contrast-color-1);
 }
-
 .btn:active {
     box-shadow: 0 0 4px 1px var(--gray-5);
 }
-
 .btn:hover {
     background-color: var(--contrast-color-5);
 }
 
 
-/*A floating anchor, maybe <a> or <div>*/
+/*A floating anchor, <a> element*/
 .floating-block-bottom-right {
     display: inline-block; /*?*/
     position: fixed;
     bottom: 10px;
     right: 10px;
+    padding: 0.5rem 1rem;
+    background-color: var(--shadow-color-4);
+    border-radius: 15%;
 }
 
 
@@ -86,172 +74,129 @@ INDEX
     min-width: 110px;
     text-align: center;
 }
-
 .menu-bar {
     justify-content: space-between;
-
 }
 
-/*******************MARGES I PADDINGS***************/
-.no-padding {
+
+/*menu-bar is nav.menu-bar>ul>(li.col-n>a{item-$})*$   n: col-3, 4...*/
+/*li.col-n, col-n is optional*/
+.fmenu-bar a {
+    display: block;
+    background-color: var(--color-6);
+    color: var(--gray-1);
+    border: 1px solid var(--color-1);
+    padding: 0.5rem 1rem;
+    margin: 0;
+    text-decoration: none;
+    flex-grow: 1;
+    min-width: 110px;
+    text-align: center;
+}
+.fmenu-bar ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;    /*Primary axis */
+    align-items: flex-start;        /*one line sec axis*/
+    align-content: flex-start; 
+}
+.fmenu-bar li {
     padding: 0;
 }
+/*******************MARGINS & PADDINGS***************/
 
-.no-padding-top-bottom {
+.padding-0 {padding: 0rem;}
+.padding-0-25 {padding: 0.25rem;}
+.padding-0-5 {padding: 0.5rem;}
+.padding-1 {padding: 1rem;}
+.padding-2 {padding: 2rem;}
+.padding-top-bottom-0 {
     padding-top: 0;
     padding-bottom: 0;
 }
-
-.padding-2 {
-    padding: 2rem;
+.padding-top-1 {
+    padding-top: 1rem;
 }
 
-.padding {
-    padding: 1rem;
-}
-
-.half-padding {
-    padding: 0.5rem;
-}
-.quarter-padding {
-    padding: 0.25rem;
-}
-
-.margin-top-bottom {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.no-margin-top {
-    margin-top: 0;
-}
-
-.no-margin-top-bottom {
+.margin-0 {margin: 0rem;}
+.margin-1 {margin: 1rem;}
+.margin-top-bottom-0 {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-.no-margin {
-    margin: 0;
+.margin-top-bottom-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-
-
+.margin-top-0 {margin-top: 0rem;}
 
 /******************BLOCKS*************************/
 .center-block {
     margin-right: auto;
     margin-left: auto;
 }
+.box-shadow {box-shadow: 1px 1px 6px black;}
+
+.width-100 {
+    width: 100%;
+}
 
 /**************backgrounds*************************/
-.background-color-2 {
-    background-color: var(--color-2);
-}
+.background-color-1 {background-color: var(--color-1);}
+.background-color-2 {background-color: var(--color-2);}
+.background-color-3 {background-color: var(--color-3);}
+.background-color-4 {background-color: var(--color-4);}
+.background-color-5 {background-color: var(--color-5);}
+.background-color-6 {background-color: var(--color-6);}
 
-.background-color-1 {
-    background-color: var(--color-1);
-}
+.background-contrast-color-1 {background-color: var(--contrast-color-1);}
+.background-contrast-color-2 {background-color: var(--contrast-color-2);}
+.background-contrast-color-3 {background-color: var(--contrast-color-3);}
+.background-contrast-color-4 {background-color: var(--contrast-color-4);}
+.background-contrast-color-5 {background-color: var(--contrast-color-5);}
+.background-contrast-color-6 {background-color: var(--contrast-color-6);}
 
-.background-color-3 {
-    background-color: var(--color-3);
-}
+.background-gray-1 {background-color: var(--gray-1)}
+.background-gray-2 {background-color: var(--gray-2)}
+.background-gray-3 {background-color: var(--gray-3)}
+.background-gray-4 {background-color: var(--gray-4)}
+.background-gray-5 {background-color: var(--gray-5)}
+.background-gray-6 {background-color: var(--gray-6)}
 
-.background-color-4 {
-    background-color: var(--color-4);
-}
-.background-color-5 {
-    background-color: var(--color-5);
-}
-.background-color-6 {
-    background-color: var(--color-6);
-}
-
-.background-contrast-color-2 {
-    background-color: var(--contrast-color-2);
-}
-
-.background-contrast-color-1 {
-    background-color: var(--contrast-color-1);
-}
-
-.background-contrast-color-3 {
-    background-color: var(--contrast-color-3);
-}
-
-.background-contrast-color-4 {
-    background-color: var(--contrast-color-4);
-}
-.background-contrast-color-5 {
-    background-color: var(--contrast-color-5);
-}
-.background-contrast-color-6 {
-    background-color: var(--contrast-color-6);
-}
-.background-gray-1 {
-    background-color: var(--gray-1)
-}
-.background-gray-2 {
-    background-color: var(--gray-2)
-}
-.background-gray-3 {
-    background-color: var(--gray-3)
-}
-.background-gray-4 {
-    background-color: var(--gray-4)
-}
-.background-gray-5 {
-    background-color: var(--gray-5)
-}
-.background-gray-6 {
-    background-color: var(--gray-6)
-}
+.background-red {background-color: red;}
+.background-salmon {background-color: salmon;}
+.background-orange {background-color: orange;}
+.background-pink {background-color: pink;}
+.background-blue {background-color: blue;}
+.background-green {background-color: green;}
 /**************colors*************************/
-.color-1 {
-    color: var(--color-1)
-}
+.color-1 {color: var(--color-1)}
+.color-2 {color: var(--color-2)}
+.color-3 {color: var(--color-3)}
+.color-4 {color: var(--color-4)}
+.color-5 {color: var(--color-5)}
+.color-5 {color: var(--color-6)}
 
-.color-2 {
-    color: var(--color-2)
-}
+.contrast-color-1 {color: var(--contrast-color-1)}
+.contrast-color-2 {color: var(--contrast-color-2)}
+.contrast-color-3 {color: var(--contrast-color-3)}
+.contrast-color-4 {color: var(--contrast-color-4)}
+.contrast-color-5 {color: var(--contrast-color-5)}
+.contrast-color-5 {color: var(--contrast-color-6)}
 
-.color-3 {
-    color: var(--color-3)
-}
+.gray-color-1 {color: var(--gray-1)}
+.gray-color-2 {color: var(--gray-2)}
+.gray-color-3 {color: var(--gray-3)}
+.gray-color-4 {color: var(--gray-4)}
+.gray-color-5 {color: var(--gray-5)}
+.gray-color-6 {color: var(--gray-6)}
 
-.color-4 {
-    color: var(--color-4)
-}
+.color-red {color: red;}
+.color-salmon {color: salmon;}
+.color-orange {color: orange;}
+.color-pink {color: pink;}
+.color-blue {color: blue;}
+.color-green {color: green;}
 
-.color-5 {
-    color: var(--color-5)
-}
-
-.color-5 {
-    color: var(--color-6)
-}
-
-.contrast-color-1 {
-    color: var(--contrast-color-1)
-}
-
-.contrast-color-2 {
-    color: var(--contrast-color-2)
-}
-
-.contrast-color-3 {
-    color: var(--contrast-color-3)
-}
-
-.contrast-color-4 {
-    color: var(--contrast-color-4)
-}
-
-.contrast-color-5 {
-    color: var(--contrast-color-5)
-}
-
-.contrast-color-5 {
-    color: var(--contrast-color-6)
-}
 
 /******************* OTHER RESOURCES *****************/

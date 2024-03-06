@@ -1,0 +1,76 @@
+/** Lateral link icons.**/
+/* Depends on:
+ * 
+ * 
+ */
+
+/*Use this to test and build it: */
+/*
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Xavier Sala">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/colors/my-color-schema.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/plugins/llinks.css">
+    <title>Lateral links example</title>
+
+</head>
+
+<body>
+
+	<div class="llinks">
+		<ul>
+			<li><a href="#"><img src="https://fakeimg.pl/48x48" alt="img1"></a></li>
+			<li><a href="#"><img src="https://fakeimg.pl/48x48" alt="img2"></a></li>
+			<li><a href="#"><img src="https://fakeimg.pl/48x48" alt="img3"></a></li>
+			<li><a href="#"><img src="https://fakeimg.pl/48x48" alt="img4"></a></li>
+		</ul>
+	</div>
+
+    <!--
+        Web content....
+
+    -->
+</body>
+</html>
+*/
+
+.llinks {
+    position: fixed;
+    top: 20vh;
+    right: -5px;
+    background-color: var(--black-transparent-6);
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+.llinks ul {
+    width:fit-content;
+}
+.llinks li {
+    list-style: none;
+}
+.llinks img {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    left: 0px;
+}
+.llinks img:hover {
+    position: relative;
+    left: -5px;
+    transition-duration: 0.2s;
+}
+.llinks:hover {
+    right: -0px;
+    transition-duration: 0.4s;
+}
+main {
+    width: calc(100% - 60px);
+}

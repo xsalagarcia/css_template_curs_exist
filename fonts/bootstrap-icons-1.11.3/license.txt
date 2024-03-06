@@ -1,0 +1,2 @@
+These fonts are from bootstrap, and their license is MIT license.
+In https://github.com/twbs/icons/blob/main/LICENSE

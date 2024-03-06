@@ -1,0 +1,27 @@
+/*
+Example of use:
+<span class="bs-icons-x-lg"></span>
+*/
+
+@font-face {
+  font-display: block;
+  font-family: "bootstrap-icons";
+  src: url("../fonts/bootstrap-icons-1.11.3/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6") format("woff2"),
+  url("../fonts/bootstrap-icons-1.11.3/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("woff");
+}
+[class^="bs-icons"]::before, [class*=" bs-icons"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align:-0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.bs-icons-list::before {content: "\f479";}/*text, type, justify, alignment, menu, hamburger*/
+.bs-icons-x-lg::before {content: "\f659";}/*x, delete, remove, reset, clear, cancel, close, exit*/

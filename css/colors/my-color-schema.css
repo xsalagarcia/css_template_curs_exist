@@ -22,9 +22,22 @@ body { /*Default, no specific class needed*/
     --gray-2: #CCCCCC;
     --gray-1: #F2F2F2;
     --transparent: #ffffff00;
+    --black-transparent-1: #00000000;
+    --black-transparent-2: #00000022;
+    --black-transparent-3: #00000044;
+    --black-transparent-4: #00000066;
+    --black-transparent-5: #00000088;
+    --black-transparent-6: #000000aa;
+    --white-transparent-1: #FFFFFF00;
+    --white-transparent-2: #FFFFFF22;
+    --white-transparent-3: #FFFFFF44;
+    --white-transparent-4: #FFFFFF66;
+    --white-transparent-5: #FFFFFF88;
+    --white-transparent-6: #FFFFFFaa;
 }
 
-.invert-default-colors { /*It has to be used at body. Type this class at body*/
+/*It has to be used at the parent container (i.e. body). Type this class at the parent container*/
+.invert-default-colors { 
     --color-6: #772c00;
     --color-5: #8a4218;
     --color-4: #ac6a43;
@@ -37,11 +50,4 @@ body { /*Default, no specific class needed*/
     --contrast-color-3: #B5C99A; 
     --contrast-color-2: #CFE1B9; 
     --contrast-color-1: #E9F5DB; 
-    --gray-6: #212529;
-    --gray-5: #595959;
-    --gray-4: #7F7F7F;
-    --gray-3: #A5A5A5;
-    --gray-2: #CCCCCC;
-    --gray-1: #F2F2F2;
-    --transparent: #ffffff00;
 }
