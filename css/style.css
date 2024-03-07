@@ -201,3 +201,21 @@ INDEX
 
 
 /******************* OTHER RESOURCES *****************/
+
+
+/* use like this: <noscript class="noscript"></noscript> at the start of the <body>*/
+noscript.noscript::before {
+    content: var(--javascript-message, "WARNING!!!! \A Javascript is needed \A You'll go to hell if JavaScript is not active");
+    white-space: pre;
+    border: 1px solid red;
+    background-color: red;
+    background-image: url('../media/img/alert_img.png');
+    background-size: 100px 100px;
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    width: 400px;
+    height:200px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
