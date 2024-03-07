@@ -138,7 +138,7 @@
     padding: 1rem;
     flex: 1 1 100%; /*default, columns adapt their size*/
     margin: 4px 5px 4px 3px; /*Default some margin, for the shadow*/
-    box-shadow: 1px 1px 2px 2px var(--gray-4);
+    box-shadow: 1px 1px 2px 2px  #7F7F7F;
     border-radius: 4px;
 }
 
