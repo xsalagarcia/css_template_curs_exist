@@ -1,0 +1,151 @@
+/** Responsive menu. The menu will hide and displayed by a button on a mobile screen **/
+/* Depends on:
+ * bootstrap-icons.css
+ * bmenu.js
+ */
+
+/*Use this to test and build it */
+/*
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/colors/my-color-schema.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/addons/bmenu.css"> <!--All here-->
+    <script src="js/addons/bmenu.js" defer></script>
+</head>
+<body>
+    <nav class="bmenu-menu">
+        <span class="bmenu-title">xsg</span>
+        <ul class="">
+            <li class="bmenu-active"><a href="">start</a></li>
+            <li><a href="">Option1</a></li>
+            <li><a href="">Option2</a></li>
+            <li><a href="">Option3</a></li>
+            <li><a href="">Option4</a></li>
+
+        </ul>
+        <span class="bmenu-icon bs-icons-list"></span> <!--The icon, could be an icon character-->
+    </nav>
+
+    <!--
+        Web content....
+
+    -->
+</body>
+</html>
+*/
+
+
+.bmenu-menu {
+    position: sticky; top: 0; /*Will be always on top. Uncoment this line if you don't want it.*/
+    background-color: var(--contrast-color-4, #ac6a43ed);
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    box-shadow: 5px 0 10px var(--black-transparent-6, #000000aa);
+}
+.bmenu-menu ul {
+    display: flex; /*flex-direction: row; default value*/
+    
+}
+.bmenu-menu ul li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.bmenu-menu ul li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+.bmenu-menu ul li:hover, li.bmenu-active{
+    background-color: var(--black-transparent-4, #00000044);
+    transition: 0.4s; /*animation*/
+}
+
+.bmenu-icon {
+    margin-right: 30px;
+    font-size: 25px;
+    color: var(--gray-1, #F2F2F2);
+    cursor: pointer;
+    display: none;
+}
+.bmenu-menu ul.show { /*Called from js*/
+    top: 65px; /*Same than bmenu height at media query max-width:858px*/
+}
+.bmenu-icon.show::before {  /*Depend on bootstrap-icons.css*/
+    content: "\f659";
+}
+.bmenu-menu span {
+    font-size: 30px;
+    padding-left: 35px;
+}
+@media screen and (max-width: 952px) {
+    .bmenu-menu ul li a {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:858px) {
+    .bmenu-menu {
+        height: 65px;
+    }
+    .bmenu-icon {
+        display:inline-flex;
+    }
+    .bmenu-menu ul{
+        position: fixed; /*To be shown independently*/
+        width: 100vw;
+        height: calc(100%-65px); /*long menu vertical*/
+        background: var(--gray-5, #595959);
+        top: -100vh; 
+        text-align: center;
+        transition: all 0.4s; 
+        flex-direction: column; 
+        
+    }
+    .bmenu-menu ul li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .bmenu-menu ul li:hover {
+        background: none;
+    }
+    .bmenu-menu ul li a {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .bmenu-menu ul li a:hover{
+        color: var(--contrast-color-4, #ac6a43ed);;
+    }
+    .bmenu-logo {
+        font-size: 25px;
+        padding-left: 35px;
+    }
+    
+}
+@media screen and (max-width: 858px) and (orientation: landscape) { /*scroll with screen rotation (landscape)*/
+    .bmenu-menu ul li {
+        margin: 5px 0 0;
+    }
+    .bmenu-menu ul {
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+}
+
+
